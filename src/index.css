@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  color-scheme: dark;
+  --velova-blue: #0052ff;
+  --velova-volt: #a3ff00;
+  --velova-navy-950: #040d18;
+  --velova-navy-900: #081526;
+  --velova-navy-850: #0c1e34;
+  --velova-navy-800: #122844;
+  --velova-navy-700: #1a385f;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #040d18;
+  color: #f3f7fa;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Kinetic sports dynamic glow & speed lines */
+.glow-volt {
+  box-shadow: 0 0 25px rgba(163, 255, 0, 0.35);
+}
+
+.glow-blue {
+  box-shadow: 0 0 30px rgba(0, 82, 255, 0.35);
+}
+
+.border-volt-active {
+  border-color: #a3ff00;
+  box-shadow: 0 0 15px rgba(163, 255, 0, 0.25);
+}
+
+.gradient-speed-line {
+  background: linear-gradient(90deg, #0052ff 0%, #a3ff00 50%, #0052ff 100%);
+  background-size: 200% 100%;
+  animation: speedLine 4s linear infinite;
+}
+
+@keyframes speedLine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Custom athletic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040d18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #122844;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0052ff;
+}
+
+

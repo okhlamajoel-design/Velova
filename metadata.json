@@ -1,0 +1,6 @@
+{
+  "name": "KINESIS ATHLETICA — Brand Showcase",
+  "description": "Website pengenalan dan manifesto visual brand sportswear premium KINESIS ATHLETICA yang berfokus pada eksplorasi kinetik, riset tekstil aerodinamis, dan filosofi gerak atletik murni.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
